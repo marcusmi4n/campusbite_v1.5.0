@@ -1,24 +1,33 @@
 import 'dart:convert';
 
 class OnboardingModel {
-  String imageUrl;
-  String headline;
-  String description;
+  final String imageUrl;
+  final String headline;
+  final String description;
+  final bool isFirstPage; // Added property
+  final bool isLastPage; // Added property
+
   OnboardingModel({
     required this.imageUrl,
     required this.headline,
     required this.description,
+    this.isFirstPage = false, // Default value
+    this.isLastPage = false, // Default value
   });
 
   OnboardingModel copyWith({
     String? imageUrl,
     String? headline,
     String? description,
+    bool? isFirstPage,
+    bool? isLastPage,
   }) {
     return OnboardingModel(
       imageUrl: imageUrl ?? this.imageUrl,
       headline: headline ?? this.headline,
       description: description ?? this.description,
+      isFirstPage: isFirstPage ?? this.isFirstPage,
+      isLastPage: isLastPage ?? this.isLastPage,
     );
   }
 
@@ -27,6 +36,8 @@ class OnboardingModel {
       'imageUrl': imageUrl,
       'headline': headline,
       'description': description,
+      'isFirstPage': isFirstPage,
+      'isLastPage': isLastPage,
     };
   }
 
@@ -35,6 +46,8 @@ class OnboardingModel {
       imageUrl: map['imageUrl'] ?? '',
       headline: map['headline'] ?? '',
       description: map['description'] ?? '',
+      isFirstPage: map['isFirstPage'] ?? false,
+      isLastPage: map['isLastPage'] ?? false,
     );
   }
 
@@ -44,8 +57,9 @@ class OnboardingModel {
       OnboardingModel.fromMap(json.decode(source));
 
   @override
-  String toString() =>
-      'OnboardingData(imageUrl: $imageUrl, headline: $headline, description: $description)';
+  String toString() {
+    return 'OnboardingModel(imageUrl: $imageUrl, headline: $headline, description: $description, isFirstPage: $isFirstPage, isLastPage: $isLastPage)';
+  }
 
   @override
   bool operator ==(Object other) {
@@ -54,10 +68,17 @@ class OnboardingModel {
     return other is OnboardingModel &&
         other.imageUrl == imageUrl &&
         other.headline == headline &&
-        other.description == description;
+        other.description == description &&
+        other.isFirstPage == isFirstPage &&
+        other.isLastPage == isLastPage;
   }
 
   @override
-  int get hashCode =>
-      imageUrl.hashCode ^ headline.hashCode ^ description.hashCode;
+  int get hashCode {
+    return imageUrl.hashCode ^
+        headline.hashCode ^
+        description.hashCode ^
+        isFirstPage.hashCode ^
+        isLastPage.hashCode;
+  }
 }

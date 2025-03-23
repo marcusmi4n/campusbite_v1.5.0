@@ -57,7 +57,23 @@ class _OnboardingPageState extends State<OnboardingPage> {
       body: SafeArea(
         child: Column(
           children: [
-            const Spacer(),
+            // Skip Button (Top Right)
+            Align(
+              alignment: Alignment.topRight,
+              child: TextButton(
+                onPressed: _gotoLoginSignUp,
+                child: Text(
+                  'Skip',
+                  style: TextStyle(
+                    color: AppColors.primary, // Use primary color for skip button
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+
+            // Onboarding Content
             Expanded(
               flex: 8,
               child: PageView.builder(
@@ -71,14 +87,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 },
               ),
             ),
-            const Spacer(),
+
+            // Next Button with Circular Progress Indicator
             Stack(
               alignment: AlignmentDirectional.center,
               children: [
+                // Circular Progress Indicator
                 TweenAnimationBuilder(
                   duration: AppDefaults.duration,
                   tween: Tween<double>(
-                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
+                    begin: 0,
+                    end: (1 / items.length) * (currentPage + 1),
                   curve: Curves.easeInOutBack,
                   builder: (context, double value, _) => SizedBox(
                     height: 70,
@@ -87,23 +106,41 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       value: value,
                       strokeWidth: 6,
                       backgroundColor: AppColors.cardColor,
-                      color: AppColors.primary,
+                      color: AppColors.primary, // Use primary color
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: _gotoNextPage,
-                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                  child: SvgPicture.asset(
-                    AppIcons.arrowForward,
-                    colorFilter: const ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
+
+                // Next Button with Gradient
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Color(0xFFFFA500), Color(0xFFFF4500)], // Orange gradient
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  child: ElevatedButton(
+                    onPressed: _gotoNextPage,
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.transparent, // Make button transparent to show gradient
+                      shadowColor: Colors.transparent,
+                      shape: const CircleBorder(),
+                      padding: EdgeInsets.all(16),
+                    ),
+                    child: SvgPicture.asset(
+                      AppIcons.arrowForward,
+                      colorFilter: const ColorFilter.mode(
+                        Colors.white,
+                        BlendMode.srcIn,
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
+
             const SizedBox(height: AppDefaults.padding),
           ],
         ),
