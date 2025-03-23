@@ -4,23 +4,22 @@ import 'onboarding_model.dart';
 class OnboardingData {
   static List<OnboardingModel> items = [
     OnboardingModel(
-      imageUrl: AppImages
-          .onboarding1, // Replace with Lottie animation for the first screen
-      headline: 'Welcome to CampusBite!',
-      description: 'Order delicious food from your favorite campus vendors.',
-      isFirstPage: true, // This is the first screen
+      imageUrl: AppImages.onboarding1,
+      headline: 'Browse all the category',
+      description:
+          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
     ),
     OnboardingModel(
       imageUrl: AppImages.onboarding2,
       headline: 'Amazing Discounts & Offers',
       description:
-          'Enjoy exclusive discounts and offers on your favorite meals.',
+          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
     ),
     OnboardingModel(
       imageUrl: AppImages.onboarding3,
       headline: 'Delivery in 30 Min',
-      description: 'Get your food delivered quickly and conveniently.',
-      isLastPage: true, // This is the last screen
+      description:
+          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
     ),
   ];
 }
