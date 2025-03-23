@@ -62,10 +62,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
               alignment: Alignment.topRight,
               child: TextButton(
                 onPressed: _gotoLoginSignUp,
-                child: Text(
+                child: const Text(
                   'Skip',
                   style: TextStyle(
-                    color: AppColors.primary, // Use primary color for skip button
+                    color: AppColors.primary,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
@@ -96,45 +96,36 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 TweenAnimationBuilder(
                   duration: AppDefaults.duration,
                   tween: Tween<double>(
-                    begin: 0,
-                    end: (1 / items.length) * (currentPage + 1),
+                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
                   curve: Curves.easeInOutBack,
-                  builder: (context, double value, _) => SizedBox(
-                    height: 70,
-                    width: 70,
-                    child: CircularProgressIndicator(
-                      value: value,
-                      strokeWidth: 6,
-                      backgroundColor: AppColors.cardColor,
-                      color: AppColors.primary, // Use primary color
-                    ),
-                  ),
+                  builder: (context, double value, _) {
+                    return SizedBox(
+                      height: 70,
+                      width: 70,
+                      child: CircularProgressIndicator(
+                        value: value,
+                        strokeWidth: 6,
+                        backgroundColor: AppColors.cardColor,
+                        color: AppColors.primary,
+                      ),
+                    );
+                  },
                 ),
 
                 // Next Button with Gradient
-                Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Color(0xFFFFA500), Color(0xFFFF4500)], // Orange gradient
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    shape: BoxShape.circle,
+                ElevatedButton(
+                  onPressed: _gotoNextPage,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.transparent,
+                    shadowColor: Colors.transparent,
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(16),
                   ),
-                  child: ElevatedButton(
-                    onPressed: _gotoNextPage,
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.transparent, // Make button transparent to show gradient
-                      shadowColor: Colors.transparent,
-                      shape: const CircleBorder(),
-                      padding: EdgeInsets.all(16),
-                    ),
-                    child: SvgPicture.asset(
-                      AppIcons.arrowForward,
-                      colorFilter: const ColorFilter.mode(
-                        Colors.white,
-                        BlendMode.srcIn,
-                      ),
+                  child: SvgPicture.asset(
+                    AppIcons.arrowForward,
+                    colorFilter: const ColorFilter.mode(
+                      Colors.white,
+                      BlendMode.srcIn,
                     ),
                   ),
                 ),
