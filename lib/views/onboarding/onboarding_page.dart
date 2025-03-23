@@ -87,7 +87,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       value: value,
                       strokeWidth: 6,
                       backgroundColor: AppColors.cardColor,
-                      color: const Color.fromARGB(255, 247, 121, 4),
+                      color: AppColors.primary,
                     ),
                   ),
                 ),
