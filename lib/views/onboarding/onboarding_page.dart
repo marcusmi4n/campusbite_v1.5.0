@@ -1,113 +1,86 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import '../../../core/components/network_image.dart';
+import '../../../core/constants/constants.dart';
+import '../data/onboarding_model.dart';
+import '../../../core/constants/app_images.dart';
+import '../../../core/constants/app_icons.dart';
 
-import '../../core/constants/constants.dart';
-import '../../core/routes/app_routes.dart';
-import 'components/onboarding_view.dart';
-import 'data/onboarding_data.dart';
-import 'data/onboarding_model.dart';
+class OnboardingView extends StatelessWidget {
+  const OnboardingView({
+    super.key,
+    required this.data,
+  });
 
-class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({super.key});
-
-  @override
-  State<OnboardingPage> createState() => _OnboardingPageState();
-}
-
-class _OnboardingPageState extends State<OnboardingPage> {
-  int currentPage = 0;
-  late PageController controller;
-  List<OnboardingModel> items = OnboardingData.items;
-
-  onPageChange(int value) {
-    currentPage = value;
-    setState(() {});
-  }
-
-  _gotoNextPage() {
-    if (currentPage < items.length - 1) {
-      controller.nextPage(
-        duration: AppDefaults.duration,
-        curve: Curves.ease,
-      );
-    } else {
-      _gotoLoginSignUp();
-    }
-  }
-
-  _gotoLoginSignUp() {
-    Navigator.pushNamed(context, AppRoutes.introLogin);
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    controller = PageController();
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
+  final OnboardingModel data;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            const Spacer(),
-            Expanded(
-              flex: 8,
-              child: PageView.builder(
-                onPageChanged: onPageChange,
-                itemCount: items.length,
-                controller: controller,
-                itemBuilder: (context, index) {
-                  return OnboardingView(
-                    data: items[index],
-                  );
-                },
-              ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.width,
+          child: Padding(
+            padding: const EdgeInsets.all(AppDefaults.padding * 2),
+            child: NetworkImageWithLoader(
+              data.imageUrl,
+              fit: BoxFit.contain,
             ),
-            const Spacer(),
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: [
-                TweenAnimationBuilder(
-                  duration: AppDefaults.duration,
-                  tween: Tween<double>(
-                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
-                  curve: Curves.easeInOutBack,
-                  builder: (context, double value, _) => SizedBox(
-                    height: 70,
-                    width: 70,
-                    child: CircularProgressIndicator(
-                      value: value,
-                      strokeWidth: 6,
-                      backgroundColor: AppColors.cardColor,
-                      color: AppColors.primary,
-                    ),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: _gotoNextPage,
-                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                  child: SvgPicture.asset(
-                    AppIcons.arrowForward,
-                    colorFilter: const ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: AppDefaults.padding),
-          ],
+          ),
         ),
-      ),
+        Padding(
+          padding: const EdgeInsets.all(AppDefaults.padding),
+          child: Column(
+            children: [
+              Text(
+                data.headline,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Roboto', // Using custom font
+                    ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(AppDefaults.padding),
+                child: Text(
+                  data.description,
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              // Gradient Button (Circular)
+              ElevatedButton(
+                onPressed: () {
+                  // Navigate to the next page or action
+                },
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
+                  primary: Colors.transparent, // Transparent to apply gradient
+                  onPrimary: Colors.white, // Icon color
+                  padding: EdgeInsets.all(20),
+                  elevation: 5,
+                  side: BorderSide(color: Colors.orange), // Optional border
+                  shadowColor: Colors.orange, // Shadow effect
+                ).copyWith(
+                  backgroundColor: MaterialStateProperty.all(
+                    LinearGradient(
+                      colors: [Color(0xFFFF7043), Color(0xFFFF9800)], // Orange gradient
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ).createShader(Rect.fromLTRB(0.0, 0.0, 200.0, 70.0)),
+                  ),
+                ),
+                child: SvgPicture.asset(
+                  AppIcons.arrowForward,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
