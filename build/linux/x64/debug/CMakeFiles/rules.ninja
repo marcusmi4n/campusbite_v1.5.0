@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/grimian/Downloads/Pro_Grocery-main/linux -B/home/grimian/Downloads/Pro_Grocery-main/build/linux/x64/debug
+  command = /usr/bin/cmake --regenerate-during-build -S"/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux" -B"/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug"
   description = Re-running CMake...
   generator = 1
 

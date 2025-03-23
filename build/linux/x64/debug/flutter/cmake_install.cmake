@@ -1,8 +1,8 @@
-# Install script for directory: /home/grimian/Downloads/Pro_Grocery-main/linux/flutter
+# Install script for directory: /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/grimian/Downloads/Pro_Grocery-main/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
