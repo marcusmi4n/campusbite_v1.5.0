@@ -48,9 +48,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
+    - assets/images/campusbite_logo.png
     - assets/icons/
-    - assets/animations/ # Add this folder for Lottie animations
+    - assets/animations/student_eating.json
+    - assets/animations/food_delivery.json
+    - assets/animations/burger.json
+    - assets/animations/phone_food.json # Add this folder for Lottie animations
 
   # Uncomment and add your custom fonts here if needed
   # fonts:
