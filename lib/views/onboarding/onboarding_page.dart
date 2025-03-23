@@ -55,57 +55,62 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            const Spacer(),
-            Expanded(
-              flex: 8,
-              child: PageView.builder(
-                onPageChanged: onPageChange,
-                itemCount: items.length,
-                controller: controller,
-                itemBuilder: (context, index) {
-                  return OnboardingView(
-                    data: items[index],
-                  );
-                },
+        child: SingleChildScrollView(
+          // Wrap everything in a scroll view
+          child: Column(
+            children: [
+              const Spacer(),
+              SizedBox(
+                height: MediaQuery.of(context).size.height *
+                    0.7, // Allow the content to scale
+                child: PageView.builder(
+                  onPageChanged: onPageChange,
+                  itemCount: items.length,
+                  controller: controller,
+                  itemBuilder: (context, index) {
+                    return OnboardingView(
+                      data: items[index],
+                    );
+                  },
+                ),
               ),
-            ),
-            const Spacer(),
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: [
-                TweenAnimationBuilder(
-                  duration: AppDefaults.duration,
-                  tween: Tween<double>(
-                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
-                  curve: Curves.easeInOutBack,
-                  builder: (context, double value, _) => SizedBox(
-                    height: 70,
-                    width: 70,
-                    child: CircularProgressIndicator(
-                      value: value,
-                      strokeWidth: 6,
-                      backgroundColor: AppColors.cardColor,
-                      color: AppColors.primary,
+              const Spacer(),
+              Stack(
+                alignment: AlignmentDirectional.center,
+                children: [
+                  TweenAnimationBuilder(
+                    duration: AppDefaults.duration,
+                    tween: Tween<double>(
+                        begin: 0, end: (1 / items.length) * (currentPage + 1)),
+                    curve: Curves.easeInOutBack,
+                    builder: (context, double value, _) => SizedBox(
+                      height: 70,
+                      width: 70,
+                      child: CircularProgressIndicator(
+                        value: value,
+                        strokeWidth: 6,
+                        backgroundColor: AppColors.cardColor,
+                        color: AppColors.primary,
+                      ),
                     ),
                   ),
-                ),
-                ElevatedButton(
-                  onPressed: _gotoNextPage,
-                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
-                  child: SvgPicture.asset(
-                    AppIcons.arrowForward,
-                    colorFilter: const ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
+                  ElevatedButton(
+                    onPressed: _gotoNextPage,
+                    style:
+                        ElevatedButton.styleFrom(shape: const CircleBorder()),
+                    child: SvgPicture.asset(
+                      AppIcons.arrowForward,
+                      colorFilter: const ColorFilter.mode(
+                        Colors.white,
+                        BlendMode.srcIn,
+                      ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: AppDefaults.padding),
-          ],
+                ],
+              ),
+              const SizedBox(height: AppDefaults.padding),
+            ],
+          ),
         ),
       ),
     );

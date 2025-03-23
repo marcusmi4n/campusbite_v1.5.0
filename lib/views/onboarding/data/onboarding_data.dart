@@ -4,22 +4,25 @@ import 'onboarding_model.dart';
 class OnboardingData {
   static List<OnboardingModel> items = [
     OnboardingModel(
-      imageUrl: AppImages.onboarding1,
-      headline: 'Browse all the category',
+      imageUrl:
+          'assets/images/campusbite_logo.png', // Use the logo image for the first screen
+      headline: 'Welcome to CampusBite',
       description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+          'Your go-to food delivery app for students, staff, and faculty on campus.',
     ),
     OnboardingModel(
-      imageUrl: AppImages.onboarding2,
-      headline: 'Amazing Discounts & Offers',
+      imageUrl:
+          'assets/animations/student_eating.json', // Lottie animation for the second screen
+      headline: 'Enjoy your meal!',
       description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+          'Get personalized food suggestions based on your mood or choice.',
     ),
     OnboardingModel(
-      imageUrl: AppImages.onboarding3,
-      headline: 'Delivery in 30 Min',
+      imageUrl:
+          'assets/animations/food_delivery.json', // Lottie animation for the third screen
+      headline: 'Quick & Easy Delivery',
       description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+          'Order food and get it delivered right to your location within the campus.',
     ),
   ];
 }

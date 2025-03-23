@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import '../../../core/components/network_image.dart';
-import '../../../core/constants/constants.dart';
-import '../data/onboarding_model.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import '../../../core/constants/app_images.dart';
+import 'onboarding_model.dart';
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({
@@ -17,14 +16,16 @@ class OnboardingView extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.width,
-          child: Padding(
-            padding: const EdgeInsets.all(AppDefaults.padding * 2),
-            child: NetworkImageWithLoader(
-              data.imageUrl,
-              fit: BoxFit.contain,
+        // Use Expanded to prevent overflow
+        Expanded(
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width,
+            child: Padding(
+              padding: const EdgeInsets.all(AppDefaults.padding * 2),
+              child: Image.asset(
+                data.imageUrl,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
         ),
