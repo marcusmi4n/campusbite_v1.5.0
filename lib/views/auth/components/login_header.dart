@@ -15,7 +15,7 @@ class LoginPageHeader extends StatelessWidget {
           child: AspectRatio(
             aspectRatio: 1 / 1,
             child: Lottie.asset(
-              'assets/animations/burger.json',
+              'assets/animations/food_delivery.json',
               fit: BoxFit.contain,
               repeat: true,
               animate: true,
