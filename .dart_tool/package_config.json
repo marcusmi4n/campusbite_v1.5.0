@@ -248,12 +248,6 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "lottie",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/lottie-2.7.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.1"
-    },
-    {
       "name": "matcher",
       "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/matcher-0.12.17",
       "packageUri": "lib/",
@@ -512,7 +506,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-03-23T19:47:45.244726Z",
+  "generated": "2025-03-23T20:34:56.844103Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///development/flutter",

@@ -4,7 +4,6 @@ class OnboardingModel {
   String imageUrl;
   String headline;
   String description;
-
   OnboardingModel({
     required this.imageUrl,
     required this.headline,
@@ -46,7 +45,7 @@ class OnboardingModel {
 
   @override
   String toString() =>
-      'OnboardingModel(imageUrl: $imageUrl, headline: $headline, description: $description)';
+      'OnboardingData(imageUrl: $imageUrl, headline: $headline, description: $description)';
 
   @override
   bool operator ==(Object other) {
