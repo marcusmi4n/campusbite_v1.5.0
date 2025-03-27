@@ -86,7 +86,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     child: CircularProgressIndicator(
                       value: value,
                       strokeWidth: 6,
-                      backgroundColor: AppColors.cardColor,
+                      backgroundColor: const Color.fromARGB(255, 230, 227, 226),
                       color: const Color.fromARGB(255, 247, 142, 5),
                     ),
                   ),
@@ -99,7 +99,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,
                     colorFilter: const ColorFilter.mode(
-                      Colors.white,
+                      Color.fromARGB(255, 228, 227, 227),
                       BlendMode.srcIn,
                     ),
                   ),
