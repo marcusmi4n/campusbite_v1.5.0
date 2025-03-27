@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../core/components/network_image.dart';
-import '../../../core/constants/constants.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginPageHeader extends StatelessWidget {
   const LoginPageHeader({
@@ -14,25 +12,31 @@ class LoginPageHeader extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.3,
-          child: const AspectRatio(
+          child: AspectRatio(
             aspectRatio: 1 / 1,
-            child: NetworkImageWithLoader(AppImages.roundedLogo),
+            child: Lottie.asset(
+              'assets/animations/burger.json',
+              fit: BoxFit.contain,
+              repeat: true,
+              animate: true,
+            ),
           ),
         ),
+        const SizedBox(height: 16), // Added spacing between animation and text
         Text(
-          'Welcome to our',
+          'Welcome to',
           style: Theme.of(context)
               .textTheme
               .titleLarge
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
         Text(
-          'E-Grocery',
+          'CampusBite',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
-                color: AppColors.primary,
+                color: const Color.fromARGB(255, 247, 142, 5),
               ),
-        )
+        ),
       ],
     );
   }
