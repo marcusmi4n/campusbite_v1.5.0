@@ -15,7 +15,7 @@
     },
     {
       "name": "archive",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/archive-3.6.1",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/archive-4.0.5",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -159,7 +159,7 @@
     },
     {
       "name": "flutter_native_splash",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/flutter_native_splash-2.4.4",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/flutter_native_splash-2.4.5",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -207,9 +207,9 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/image-4.3.0",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/image-4.5.4",
       "packageUri": "lib/",
-      "languageVersion": "2.15"
+      "languageVersion": "3.0"
     },
     {
       "name": "intl",
@@ -334,6 +334,12 @@
     {
       "name": "plugin_platform_interface",
       "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "posix",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/posix-6.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -506,7 +512,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-03-23T20:34:56.844103Z",
+  "generated": "2025-03-27T07:07:25.536160Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///development/flutter",
