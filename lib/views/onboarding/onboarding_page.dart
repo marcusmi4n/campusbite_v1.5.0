@@ -87,13 +87,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       value: value,
                       strokeWidth: 6,
                       backgroundColor: AppColors.cardColor,
-                      color: AppColors.primary,
+                      color: const Color.fromARGB(255, 247, 142, 5),
                     ),
                   ),
                 ),
                 ElevatedButton(
                   onPressed: _gotoNextPage,
-                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
+                  style: ElevatedButton.styleFrom(
+                      shape: const CircleBorder(),
+                      backgroundColor: Colors.orange),
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,
                     colorFilter: const ColorFilter.mode(
