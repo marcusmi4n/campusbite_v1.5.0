@@ -37,11 +37,15 @@ class _Footer extends StatelessWidget {
             padding: const EdgeInsets.all(AppDefaults.padding),
             child: ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, AppRoutes.login),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 247, 142, 5),
+              ),
               child: const Text('Login With Email'),
             ),
           ),
         ),
         const SizedBox(height: AppDefaults.margin),
+        // Your other widgets continue here...
         Text(
           'OR',
           style: Theme.of(context)
