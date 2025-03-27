@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
@@ -8,9 +8,7 @@ import '../../../core/utils/validators.dart';
 import 'login_button.dart';
 
 class LoginPageForm extends StatefulWidget {
-  const LoginPageForm({
-    super.key,
-  });
+  const LoginPageForm({super.key});
 
   @override
   State<LoginPageForm> createState() => _LoginPageFormState();
@@ -18,16 +16,17 @@ class LoginPageForm extends StatefulWidget {
 
 class _LoginPageFormState extends State<LoginPageForm> {
   final _key = GlobalKey<FormState>();
+  bool _isPasswordShown = false;
+  final Color _iconColor = const Color.fromARGB(255, 247, 142, 5);
 
-  bool isPasswordShown = false;
-  onPassShowClicked() {
-    isPasswordShown = !isPasswordShown;
-    setState(() {});
+  void _togglePasswordVisibility() {
+    setState(() {
+      _isPasswordShown = !_isPasswordShown;
+    });
   }
 
-  onLogin() {
-    final bool isFormOkay = _key.currentState?.validate() ?? false;
-    if (isFormOkay) {
+  void _handleLogin() {
+    if (_key.currentState?.validate() ?? false) {
       Navigator.pushNamed(context, AppRoutes.entryPoint);
     }
   }
@@ -45,13 +44,18 @@ class _LoginPageFormState extends State<LoginPageForm> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Phone Field
-              const Text("Phone Number"),
+              // Student Number Field
+              const Text("Student Number"),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.number,
-                validator: Validators.requiredWithFieldName('Phone').call,
+                validator:
+                    Validators.requiredWithFieldName('Student Number').call,
                 textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.person, color: _iconColor),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 16),
+                ),
               ),
               const SizedBox(height: AppDefaults.padding),
 
@@ -60,36 +64,36 @@ class _LoginPageFormState extends State<LoginPageForm> {
               const SizedBox(height: 8),
               TextFormField(
                 validator: Validators.password.call,
-                onFieldSubmitted: (v) => onLogin(),
+                onFieldSubmitted: (_) => _handleLogin(),
                 textInputAction: TextInputAction.done,
-                obscureText: !isPasswordShown,
+                obscureText: !_isPasswordShown,
                 decoration: InputDecoration(
-                  suffixIcon: Material(
-                    color: Colors.transparent,
-                    child: IconButton(
-                      onPressed: onPassShowClicked,
-                      icon: SvgPicture.asset(
-                        AppIcons.eye,
-                        width: 24,
-                      ),
+                  prefixIcon: Icon(Icons.lock, color: _iconColor),
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      _isPasswordShown
+                          ? Icons.visibility
+                          : Icons.visibility_off,
+                      color: _iconColor,
                     ),
+                    onPressed: _togglePasswordVisibility,
                   ),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 16),
                 ),
               ),
 
-              // Forget Password labelLarge
+              // Forgot Password
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, AppRoutes.forgotPassword);
-                  },
-                  child: const Text('Forget Password?'),
+                  onPressed: () =>
+                      Navigator.pushNamed(context, AppRoutes.forgotPassword),
+                  child: const Text('Forgot Password?'),
                 ),
               ),
 
-              // Login labelLarge
-              LoginButton(onPressed: onLogin),
+              // Login Button
+              LoginButton(onPressed: _handleLogin),
             ],
           ),
         ),
