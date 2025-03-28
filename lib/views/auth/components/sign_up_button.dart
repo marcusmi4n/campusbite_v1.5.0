@@ -26,7 +26,15 @@ class SignUpButton extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, AppRoutes.numberVerification);
             },
-            style: ElevatedButton.styleFrom(elevation: 1),
+            style: ElevatedButton.styleFrom(
+              elevation: 1,
+              backgroundColor: Colors.orange, // Primary orange
+              foregroundColor: Colors.white, // Icon color
+              padding: const EdgeInsets.all(16), // Better touch target
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8), // Rounded corners
+              ),
+            ),
             child: SvgPicture.asset(
               AppIcons.arrowForward,
               colorFilter: const ColorFilter.mode(
