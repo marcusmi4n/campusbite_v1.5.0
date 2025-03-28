@@ -40,6 +40,6 @@ flutter_icons:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+    - assets/images/campusbite_logo.png
     - assets/icons/
     - assets/animations/  # <-- Added for Lottie JSON files
