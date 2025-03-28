@@ -10,19 +10,21 @@ class OnboardingData {
     return [
       const OnboardingModel(
         imageUrl: 'assets/images/campusbite_logo.png',
-        headline: 'Browse All Categories',
-        description: 'Discover all available food options on campus',
+        headline: 'Welcome to CampusBite!🍔',
+        description:
+            'Your go-to app for affordable, healthy & delicious meals on campus.',
         isLottie: false,
       ),
       const OnboardingModel(
         imageUrl: 'assets/animations/student_eating.json',
-        headline: 'Exclusive Student Discounts',
-        description: 'Enjoy special offers just for campus students',
+        headline: 'Easy Ordering 🚀',
+        description:
+            'Browse menus, place orders, and enjoy quick delivery right to your lecture room.',
         isLottie: true,
       ),
       const OnboardingModel(
         imageUrl: 'assets/animations/phone_food.json',
-        headline: 'Lightning Fast Delivery',
+        headline: 'Lightning Fast Delivery🍕',
         description: 'Get your meals in 30 minutes or less',
         isLottie: true,
       ),

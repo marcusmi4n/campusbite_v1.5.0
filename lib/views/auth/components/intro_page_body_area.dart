@@ -28,7 +28,7 @@ class IntroPageBodyArea extends StatelessWidget {
                         fontWeight: FontWeight.bold, color: Colors.black),
                   ),
                   Text(
-                    'CampusBite',
+                    'CampusBite 🍔',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: const Color.fromARGB(255, 241, 153, 36)),
