@@ -1,24 +1,30 @@
 import 'dart:convert';
 
 class OnboardingModel {
-  String imageUrl;
-  String headline;
-  String description;
+  final String imageUrl;
+  final String headline;
+  final String description;
+  final bool isLottie; // New field to distinguish between image types
+
   OnboardingModel({
     required this.imageUrl,
     required this.headline,
     required this.description,
+    this.isLottie = false, // Default to false for backward compatibility
   });
 
+  // Existing methods updated with isLottie field
   OnboardingModel copyWith({
     String? imageUrl,
     String? headline,
     String? description,
+    bool? isLottie,
   }) {
     return OnboardingModel(
       imageUrl: imageUrl ?? this.imageUrl,
       headline: headline ?? this.headline,
       description: description ?? this.description,
+      isLottie: isLottie ?? this.isLottie,
     );
   }
 
@@ -27,6 +33,7 @@ class OnboardingModel {
       'imageUrl': imageUrl,
       'headline': headline,
       'description': description,
+      'isLottie': isLottie,
     };
   }
 
@@ -35,6 +42,7 @@ class OnboardingModel {
       imageUrl: map['imageUrl'] ?? '',
       headline: map['headline'] ?? '',
       description: map['description'] ?? '',
+      isLottie: map['isLottie'] ?? false,
     );
   }
 
@@ -45,7 +53,7 @@ class OnboardingModel {
 
   @override
   String toString() =>
-      'OnboardingData(imageUrl: $imageUrl, headline: $headline, description: $description)';
+      'OnboardingModel(imageUrl: $imageUrl, headline: $headline, description: $description, isLottie: $isLottie)';
 
   @override
   bool operator ==(Object other) {
@@ -54,10 +62,14 @@ class OnboardingModel {
     return other is OnboardingModel &&
         other.imageUrl == imageUrl &&
         other.headline == headline &&
-        other.description == description;
+        other.description == description &&
+        other.isLottie == isLottie;
   }
 
   @override
   int get hashCode =>
-      imageUrl.hashCode ^ headline.hashCode ^ description.hashCode;
+      imageUrl.hashCode ^
+      headline.hashCode ^
+      description.hashCode ^
+      isLottie.hashCode;
 }

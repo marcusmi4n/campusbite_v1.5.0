@@ -1,25 +1,28 @@
-import '../../../core/constants/app_images.dart';
-import 'onboarding_model.dart';
+import 'package:flutter/material.dart';
+import '../data/onboarding_model.dart';
 
 class OnboardingData {
   static List<OnboardingModel> items = [
     OnboardingModel(
-      imageUrl: AppImages.onboarding1,
+      // Asset image
+      imageUrl: 'assets/images/campusbite_logo.png', // Your image path
       headline: 'Browse all the category',
-      description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+      description: 'Discover all available food options on campus',
+      isLottie: false,
     ),
     OnboardingModel(
-      imageUrl: AppImages.onboarding2,
+      // First Lottie animation
+      imageUrl: 'assets/animations/student_eating.json', // Lottie file
       headline: 'Amazing Discounts & Offers',
-      description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+      description: 'Get exclusive student discounts on every order',
+      isLottie: true,
     ),
     OnboardingModel(
-      imageUrl: AppImages.onboarding3,
-      headline: 'Delivery in 30 Min',
-      description:
-          'In aliquip aute exercitation ut et nisi ut mollit. Deserunt dolor elit pariatur aute .',
+      // Second Lottie animation
+      imageUrl: 'assets/animations/food_delivery.json', // Lottie file
+      headline: 'Fast Delivery',
+      description: 'Get your food delivered in under 30 minutes',
+      isLottie: true,
     ),
   ];
 }
