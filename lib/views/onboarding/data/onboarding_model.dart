@@ -1,19 +1,30 @@
 import 'dart:convert';
 
+/// Represents a single onboarding screen content
 class OnboardingModel {
+  /// URL or path to the media content
+  /// - For images: Network URL or asset path (e.g., 'assets/images/onboarding1.png')
+  /// - For Lottie: JSON file path (e.g., 'assets/animations/onboarding1.json')
   final String imageUrl;
-  final String headline;
-  final String description;
-  final bool isLottie; // New field to distinguish between image types
 
-  OnboardingModel({
+  /// Main title text
+  final String headline;
+
+  /// Descriptive text
+  final String description;
+
+  /// Whether the media is a Lottie animation (true) or static image (false)
+  final bool isLottie;
+
+  /// Creates an onboarding model
+  const OnboardingModel({
     required this.imageUrl,
     required this.headline,
     required this.description,
-    this.isLottie = false, // Default to false for backward compatibility
+    this.isLottie = false,
   });
 
-  // Existing methods updated with isLottie field
+  /// Creates a copy with updated fields
   OnboardingModel copyWith({
     String? imageUrl,
     String? headline,
@@ -28,6 +39,7 @@ class OnboardingModel {
     );
   }
 
+  /// Serializes to a Map
   Map<String, dynamic> toMap() {
     return {
       'imageUrl': imageUrl,
@@ -37,28 +49,35 @@ class OnboardingModel {
     };
   }
 
+  /// Deserializes from a Map
   factory OnboardingModel.fromMap(Map<String, dynamic> map) {
     return OnboardingModel(
-      imageUrl: map['imageUrl'] ?? '',
-      headline: map['headline'] ?? '',
-      description: map['description'] ?? '',
-      isLottie: map['isLottie'] ?? false,
+      imageUrl: map['imageUrl']?.toString() ?? '',
+      headline: map['headline']?.toString() ?? '',
+      description: map['description']?.toString() ?? '',
+      isLottie: map['isLottie'] == true,
     );
   }
 
+  /// Serializes to JSON
   String toJson() => json.encode(toMap());
 
+  /// Deserializes from JSON
   factory OnboardingModel.fromJson(String source) =>
       OnboardingModel.fromMap(json.decode(source));
 
   @override
-  String toString() =>
-      'OnboardingModel(imageUrl: $imageUrl, headline: $headline, description: $description, isLottie: $isLottie)';
+  String toString() {
+    return 'OnboardingModel('
+        'imageUrl: $imageUrl, '
+        'headline: $headline, '
+        'description: $description, '
+        'isLottie: $isLottie)';
+  }
 
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-
     return other is OnboardingModel &&
         other.imageUrl == imageUrl &&
         other.headline == headline &&
@@ -67,9 +86,12 @@ class OnboardingModel {
   }
 
   @override
-  int get hashCode =>
-      imageUrl.hashCode ^
-      headline.hashCode ^
-      description.hashCode ^
-      isLottie.hashCode;
+  int get hashCode {
+    return Object.hash(
+      imageUrl.hashCode,
+      headline.hashCode,
+      description.hashCode,
+      isLottie.hashCode,
+    );
+  }
 }

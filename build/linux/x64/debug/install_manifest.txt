@@ -21,14 +21,7 @@
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/phone_food.json
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/food_delivery.json
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/student_eating.json
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_3.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_2.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_1.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/profile_page_background.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/app_logo_splash.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/app_logo.svg
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/app_logo.png
-/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_4.png
+/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/campusbite_logo.png
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/heart_active.svg
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/card_add.svg
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/facebook_icon.svg
