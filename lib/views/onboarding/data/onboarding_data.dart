@@ -21,7 +21,7 @@ class OnboardingData {
         isLottie: true,
       ),
       OnboardingModel(
-        imageUrl: 'assets/animations/food_delivery.json',
+        imageUrl: 'assets/animations/phone_food.json',
         headline: 'Lightning Fast Delivery',
         description: 'Get your meals in 30 minutes or less',
         isLottie: true,
