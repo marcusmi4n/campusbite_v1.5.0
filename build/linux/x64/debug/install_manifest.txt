@@ -17,6 +17,10 @@
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/packages/flutter_credit_card/icons/visa.png
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/packages/flutter_credit_card/icons/discover.png
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/burger.json
+/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/phone_food.json
+/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/food_delivery.json
+/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/animations/student_eating.json
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_3.png
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_2.png
 /home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/coupon_background_1.png
