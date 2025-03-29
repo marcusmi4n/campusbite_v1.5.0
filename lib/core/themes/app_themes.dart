@@ -7,8 +7,8 @@ import '../constants/app_defaults.dart';
 class AppTheme {
   static ThemeData get defaultTheme {
     return ThemeData(
-      colorSchemeSeed: AppColors.primary,
-      fontFamily: "Gilroy",
+      colorSchemeSeed: const Color.fromARGB(255, 255, 165, 0),
+      fontFamily: "Comic Sans MS",
       textTheme: const TextTheme(
         bodyLarge: TextStyle(color: AppColors.placeholder),
         bodyMedium: TextStyle(color: AppColors.placeholder),
@@ -22,7 +22,7 @@ class AppTheme {
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
-          fontFamily: "Gilroy",
+          fontFamily: "Comic Sans MS",
         ),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarBrightness: Brightness.light,
@@ -30,7 +30,7 @@ class AppTheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          backgroundColor: const Color.fromARGB(255, 255, 165, 0),
           foregroundColor: Colors.white,
           padding: const EdgeInsets.all(AppDefaults.padding),
           elevation: 0,
@@ -54,7 +54,7 @@ class AppTheme {
         style: TextButton.styleFrom(
           textStyle: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontFamily: 'Gilroy',
+            fontFamily: 'Comic Sans MS',
           ),
         ),
       ),
@@ -64,13 +64,13 @@ class AppTheme {
         thumbColor: Colors.white,
       ),
       tabBarTheme: const TabBarTheme(
-        labelColor: AppColors.primary,
+        labelColor: Color.fromARGB(255, 255, 165, 0),
         unselectedLabelColor: AppColors.placeholder,
         labelPadding: EdgeInsets.all(AppDefaults.padding),
         indicatorSize: TabBarIndicatorSize.label,
         labelStyle: TextStyle(
           fontWeight: FontWeight.bold,
-          color: AppColors.primary,
+          color: Color.fromARGB(255, 255, 165, 0),
         ),
         unselectedLabelStyle: TextStyle(
           fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class AppTheme {
         ),
         indicator: UnderlineTabIndicator(
           borderSide: BorderSide(
-            color: AppColors.primary,
+            color: Color.fromARGB(255, 255, 165, 0),
             width: 2,
           ),
         ),

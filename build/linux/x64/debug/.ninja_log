@@ -1,29 +1,56 @@
 # ninja log v5
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/libflutter_linux_gtk.so	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_engine.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	259011fb52e2ca4b
 1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_value.h	259011fb52e2ca4b
+48777	48923	1743249721883938722	intermediates_do_not_run/flutter_upgrde_app	5c10cc4915eb1774
 1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	259011fb52e2ca4b
 1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	259011fb52e2ca4b
 1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_value.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_view.h	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	259011fb52e2ca4b
-1	47929	0	flutter/_phony_	259011fb52e2ca4b
-1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/flutter/_phony_	259011fb52e2ca4b
-47930	48680	1743249721636929929	CMakeFiles/flutter_upgrde_app.dir/main.cc.o	911aa7fa54a9fbcb
-47931	48746	1743249721705932386	CMakeFiles/flutter_upgrde_app.dir/flutter/generated_plugin_registrant.cc.o	c5bbc9203fb6f388
-47930	48777	1743249721734933418	CMakeFiles/flutter_upgrde_app.dir/my_application.cc.o	1a26f215392fd177
-48777	48923	1743249721883938722	intermediates_do_not_run/flutter_upgrde_app	5c10cc4915eb1774
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_engine.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	259011fb52e2ca4b
 48923	49066	0	CMakeFiles/install.util	9695bec57b87f4
+47931	48746	1743249721705932386	CMakeFiles/flutter_upgrde_app.dir/flutter/generated_plugin_registrant.cc.o	c5bbc9203fb6f388
+47930	48680	1743249721636929929	CMakeFiles/flutter_upgrde_app.dir/main.cc.o	911aa7fa54a9fbcb
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/flutter/_phony_	259011fb52e2ca4b
+1	47929	0	flutter/_phony_	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_view.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	259011fb52e2ca4b
+47930	48777	1743249721734933418	CMakeFiles/flutter_upgrde_app.dir/my_application.cc.o	1a26f215392fd177
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	259011fb52e2ca4b
+1	47929	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/libflutter_linux_gtk.so	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/libflutter_linux_gtk.so	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_engine.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_value.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/fl_view.h	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	259011fb52e2ca4b
+13	3668	0	flutter/_phony_	259011fb52e2ca4b
+13	3668	0	/home/grimian/Documents/WIN flutter apps/GiTHUB/campusbite_v1.5.0/build/linux/x64/debug/flutter/_phony_	259011fb52e2ca4b
+3669	4328	1743250402499074621	CMakeFiles/flutter_upgrde_app.dir/flutter/generated_plugin_registrant.cc.o	c5bbc9203fb6f388
+3668	4377	1743250402549076269	CMakeFiles/flutter_upgrde_app.dir/my_application.cc.o	1a26f215392fd177
+4377	4514	1743250402688080851	intermediates_do_not_run/flutter_upgrde_app	9ed836d9a89e78f0
+4514	4632	0	CMakeFiles/install.util	9695bec57b87f4
