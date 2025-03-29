@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+set(CMAKE_CXX_COMPILER "/opt/swift-6.0.2/usr/bin/clang++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
-set(CMAKE_CXX_COMPILER_VERSION "18.1.3")
+set(CMAKE_CXX_COMPILER_VERSION "17.0.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/usr/bin/llvm-ar")
-set(CMAKE_CXX_COMPILER_AR "/usr/bin/llvm-ar-18")
-set(CMAKE_RANLIB "/usr/bin/llvm-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/llvm-ranlib-18")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_AR "/opt/swift-6.0.2/usr/bin/llvm-ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/swift-6.0.2/usr/bin/llvm-ar")
+set(CMAKE_RANLIB "/opt/swift-6.0.2/usr/bin/llvm-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/swift-6.0.2/usr/bin/llvm-ranlib")
+set(CMAKE_LINKER "/opt/swift-6.0.2/usr/bin/ld.lld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX )
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/opt/swift-6.0.2/usr/lib/clang/17/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
