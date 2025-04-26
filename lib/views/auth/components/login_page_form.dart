@@ -17,7 +17,7 @@ class LoginPageForm extends StatefulWidget {
 class _LoginPageFormState extends State<LoginPageForm> {
   final _key = GlobalKey<FormState>();
   bool _isPasswordShown = false;
-  final Color _iconColor = const Color.fromARGB(255, 247, 142, 5);
+  final Color _iconColor = const Color.fromARGB(255, 44, 102, 59);
 
   void _togglePasswordVisibility() {
     setState(() {

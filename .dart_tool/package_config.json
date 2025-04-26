@@ -165,7 +165,7 @@
     },
     {
       "name": "flutter_svg",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/flutter_svg-2.0.17",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/flutter_svg-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -189,7 +189,7 @@
     },
     {
       "name": "html",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/html-0.15.5",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/html-0.15.6",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -297,7 +297,7 @@
     },
     {
       "name": "path_provider_android",
-      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/path_provider_android-2.2.16",
+      "rootUri": "file:///home/grimian/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17",
       "packageUri": "lib/",
       "languageVersion": "3.6"
     },
@@ -512,7 +512,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-03-29T13:23:57.885106Z",
+  "generated": "2025-04-26T15:39:42.395551Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///development/flutter",

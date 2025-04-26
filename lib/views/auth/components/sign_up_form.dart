@@ -68,7 +68,8 @@ class _SignUpFormState extends State<SignUpForm> {
                 borderRadius: AppDefaults.borderRadius,
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.orange),
+                borderSide:
+                    const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
                 borderRadius: AppDefaults.borderRadius,
               ),
             ),
@@ -83,12 +84,14 @@ class _SignUpFormState extends State<SignUpForm> {
             textInputAction: TextInputAction.next,
             obscureText: _obscurePassword,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.lock_outline, color: Colors.orange),
+              prefixIcon: Icon(Icons.lock_outline,
+                  color: const Color.fromARGB(255, 44, 102, 59)),
               border: OutlineInputBorder(
                 borderRadius: AppDefaults.borderRadius,
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.orange),
+                borderSide:
+                    const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
                 borderRadius: AppDefaults.borderRadius,
               ),
               suffixIcon: IconButton(

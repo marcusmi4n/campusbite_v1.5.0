@@ -38,7 +38,7 @@ class _Footer extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, AppRoutes.login),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 247, 142, 5),
+                backgroundColor: const Color.fromARGB(255, 44, 102, 59),
               ),
               child: const Text('Login With Email'),
             ),
@@ -99,7 +99,7 @@ class _AppLogoAndHeadline extends StatelessWidget {
           ),
         ),
         Text(
-          'Welcome to our',
+          'Welcome to',
           style: Theme.of(context)
               .textTheme
               .headlineSmall
@@ -109,7 +109,7 @@ class _AppLogoAndHeadline extends StatelessWidget {
           'CampusBite',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
-                color: AppColors.primary,
+                color: const Color.fromARGB(255, 44, 102, 59),
               ),
         )
       ],

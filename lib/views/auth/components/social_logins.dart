@@ -19,7 +19,7 @@ class SocialLogins extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: Colors.red),
+                side: const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
                 padding: const EdgeInsets.symmetric(
                   horizontal: AppDefaults.padding * 2,
                   vertical: AppDefaults.padding,
