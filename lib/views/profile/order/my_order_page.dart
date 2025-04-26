@@ -17,7 +17,7 @@ class AllOrderPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           leading: const AppBackButton(),
-          title: const Text('My Order'),
+          title: const Text('My Orders'),
           bottom: const TabBar(
             physics: NeverScrollableScrollPhysics(),
             tabs: [

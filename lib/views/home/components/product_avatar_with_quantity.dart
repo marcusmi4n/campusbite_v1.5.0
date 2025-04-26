@@ -39,7 +39,8 @@ class ProductAvatarWithQuanitty extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
-                border: Border.all(color: AppColors.primary, width: 2),
+                border: Border.all(
+                    color: const Color.fromARGB(255, 44, 102, 59), width: 2),
               ),
               child: Text(
                 'x$quantity',

@@ -56,7 +56,7 @@ class PopularPackPage extends StatelessWidget {
                     children: [
                       SvgPicture.asset(AppIcons.shoppingBag),
                       const SizedBox(width: AppDefaults.padding),
-                      const Text('Create Own Pack'),
+                      const Text('Create Own Meal'),
                     ],
                   ),
                 ),

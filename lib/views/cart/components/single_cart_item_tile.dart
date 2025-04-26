@@ -43,7 +43,7 @@ class SingleCartItemTile extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Sulphurfree Bura',
+                          'Coca Cola',
                           style: Theme.of(context)
                               .textTheme
                               .bodyLarge

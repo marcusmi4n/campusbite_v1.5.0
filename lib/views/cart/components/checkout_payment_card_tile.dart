@@ -36,7 +36,9 @@ class PaymentCardTile extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: AppDefaults.borderRadius,
               border: Border.all(
-                color: isActive ? AppColors.primary : AppColors.placeholder,
+                color: isActive
+                    ? const Color.fromARGB(255, 44, 102, 59)
+                    : AppColors.placeholder,
                 width: isActive ? 1 : 0.2,
               ),
             ),

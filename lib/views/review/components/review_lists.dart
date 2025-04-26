@@ -18,8 +18,7 @@ class ReviewLists extends StatelessWidget {
             time: '12 Days Ago',
             isFavourite: index.isEven,
             totalLikes: 24,
-            review:
-                'Aliqua officia duis occaecat consectetur fugiat nostrud anim dolor commodo officia proident. Voluptate nisi reprehenderit.',
+            review: 'I Loved this meal it was magnificient.',
             userPicture: 'https://i.imgur.com/BAOH63b.png',
           );
         },

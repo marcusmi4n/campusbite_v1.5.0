@@ -51,14 +51,14 @@ class ContactUsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '+8801710000000',
+                      '+256784235746',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: Colors.black,
                           ),
                     ),
                     const SizedBox(height: AppDefaults.padding / 2),
                     Text(
-                      '+8801710000000',
+                      '++256775709545',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: Colors.black,
                           ),
@@ -73,7 +73,7 @@ class ContactUsPage extends StatelessWidget {
                 SvgPicture.asset(AppIcons.contactEmail),
                 const SizedBox(width: AppDefaults.padding),
                 Text(
-                  'jonarban45@gmail.com',
+                  'dianahkabengera@gmail.com',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: Colors.black,
                       ),
@@ -87,7 +87,7 @@ class ContactUsPage extends StatelessWidget {
                 SvgPicture.asset(AppIcons.contactMap),
                 const SizedBox(width: AppDefaults.padding),
                 Text(
-                  '26/C Mohammadpur\nDhaka, Bangladesh',
+                  'Mbekeka Dianah\nNakawa, Kampala',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: Colors.black,
                       ),

@@ -10,12 +10,12 @@ class PaymentDefaultCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return CreditCardWidget(
       cardNumber: '146465465456',
-      expiryDate: '10/24',
-      cardHolderName: 'Dannis Alvert',
-      labelCardHolder: 'Dannis',
+      expiryDate: '10/25',
+      cardHolderName: 'Mbekeka Dianah',
+      labelCardHolder: 'Dianah',
       isHolderNameVisible: true,
       backgroundNetworkImage: 'https://i.imgur.com/uUDkwQx.png',
-      cvvCode: '5424',
+      cvvCode: '577',
       showBackView: false,
       cardType: CardType.visa,
       onCreditCardWidgetChange: (v) {},

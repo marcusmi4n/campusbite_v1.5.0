@@ -40,8 +40,14 @@ class PaymentSystem extends StatelessWidget {
                 isActive: true,
               ),
               PaymentCardTile(
-                label: 'Paypal',
-                icon: AppIcons.paypal,
+                label: 'Airtel Money',
+                icon: AppIcons.airtel,
+                onTap: () {},
+                isActive: false,
+              ),
+              PaymentCardTile(
+                label: 'MTN Momo Pay',
+                icon: AppIcons.mtn,
                 onTap: () {},
                 isActive: false,
               ),

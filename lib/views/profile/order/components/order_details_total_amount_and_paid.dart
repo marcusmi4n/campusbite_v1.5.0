@@ -22,7 +22,7 @@ class TotalAmountAndPaidData extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                '\$120',
+                '\$ UGX 10,000',
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.bold, color: Colors.black),
               ),
@@ -38,7 +38,7 @@ class TotalAmountAndPaidData extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                'Credit Card',
+                'Airtel Money',
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.bold, color: Colors.black),
               ),

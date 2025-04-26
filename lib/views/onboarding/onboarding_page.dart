@@ -87,7 +87,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       value: value,
                       strokeWidth: 6,
                       backgroundColor: const Color.fromARGB(255, 230, 227, 226),
-                      color: const Color.fromARGB(255, 247, 142, 5),
+                      color: const Color.fromARGB(255, 44, 102, 59),
                     ),
                   ),
                 ),
@@ -95,7 +95,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   onPressed: _gotoNextPage,
                   style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
-                      backgroundColor: Colors.orange),
+                      backgroundColor: const Color.fromARGB(255, 44, 102, 59)),
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,
                     colorFilter: const ColorFilter.mode(

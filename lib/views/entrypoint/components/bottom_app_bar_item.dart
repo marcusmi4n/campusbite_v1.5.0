@@ -27,14 +27,18 @@ class BottomAppBarItem extends StatelessWidget {
           SvgPicture.asset(
             iconLocation,
             colorFilter: ColorFilter.mode(
-              isActive ? AppColors.primary : AppColors.placeholder,
+              isActive
+                  ? const Color.fromARGB(255, 44, 102, 59)
+                  : AppColors.placeholder,
               BlendMode.srcIn,
             ),
           ),
           Text(
             name,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: isActive ? AppColors.primary : AppColors.placeholder,
+                  color: isActive
+                      ? const Color.fromARGB(255, 44, 102, 59)
+                      : AppColors.placeholder,
                 ),
           ),
         ],

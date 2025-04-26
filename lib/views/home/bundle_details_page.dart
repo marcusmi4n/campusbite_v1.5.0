@@ -10,7 +10,7 @@ class BundleDetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Bundle Details Page'),
+        title: const Text('Meal Details Page'),
       ),
     );
   }

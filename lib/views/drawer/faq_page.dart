@@ -18,11 +18,11 @@ class FAQPage extends StatelessWidget {
           TitleAndParagraph(
               title: '1. How it will take to delivery?',
               paragraph:
-                  '''In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.'''),
+                  '''Since we are within campus and have a number of delivery personnel our speed is relatively quick making latest 15 mins.'''),
           TitleAndParagraph(
               title: '3. What is refund system?',
               paragraph:
-                  '''In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.\n\nMaecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien.\n\nAliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.'''),
+                  '''Due to the fact that we work for the people we do refunds incase of any unmet conditions or expectations.\n\nThough Terms & Conditions Apply.'''),
         ],
       ),
     );

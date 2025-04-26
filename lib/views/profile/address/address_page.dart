@@ -31,9 +31,9 @@ class AddressPage extends StatelessWidget {
             ListView.separated(
               itemBuilder: (context, index) {
                 return AddressTile(
-                  label: 'Puraton Custom, Chhatak',
-                  address: '216/c East Road',
-                  number: '+88017100710000',
+                  label: 'Smart Ideas, Innovation Hub',
+                  address: 'Second Table',
+                  number: '+256708626736',
                   isActive: index == 0,
                 );
               },
@@ -48,8 +48,8 @@ class AddressPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, AppRoutes.newAddress);
                 },
-                backgroundColor: AppColors.primary,
-                splashColor: AppColors.primary,
+                backgroundColor: const Color.fromARGB(255, 44, 102, 59),
+                splashColor: const Color.fromARGB(255, 44, 102, 59),
                 child: const Icon(Icons.add),
               ),
             ),

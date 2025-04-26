@@ -54,7 +54,7 @@ class _UserData extends StatelessWidget {
               child: AspectRatio(
                   aspectRatio: 1 / 1,
                   child: NetworkImageWithLoader(
-                      'https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')),
+                      'https://i.pinimg.com/736x/7d/f5/ff/7df5ff3aab2ddea580b011188deddf09.jpg')),
             ),
           ),
           const SizedBox(width: AppDefaults.padding),
@@ -62,7 +62,7 @@ class _UserData extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Shakibul Islam',
+                'Mian',
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold, color: Colors.white),
               ),

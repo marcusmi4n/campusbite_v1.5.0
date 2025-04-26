@@ -37,7 +37,7 @@ class BundleProductDetailsPage extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      'Bundle Pack',
+                      'Meal Bundle',
                       style:
                           Theme.of(context).textTheme.headlineSmall?.copyWith(
                                 fontWeight: FontWeight.bold,

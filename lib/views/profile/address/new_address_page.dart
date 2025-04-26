@@ -70,7 +70,7 @@ class NewAddressPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- City -----> */
-              const Text("City"),
+              const Text("Room"),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,

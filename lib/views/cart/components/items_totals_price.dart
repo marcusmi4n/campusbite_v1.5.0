@@ -25,16 +25,16 @@ class ItemTotalsAndPrice extends StatelessWidget {
           ),
           ItemRow(
             title: 'Price',
-            value: '\$ 82.25',
+            value: '\$ UGX 2000',
           ),
           ItemRow(
             title: 'Price',
-            value: '\$ 12.25',
+            value: '\$ UGX 1000',
           ),
           DottedDivider(),
           ItemRow(
             title: 'Total Price',
-            value: '\$ 70.25',
+            value: '\$ UGX 4500',
           ),
         ],
       ),

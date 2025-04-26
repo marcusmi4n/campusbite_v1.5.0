@@ -14,7 +14,7 @@ class BundleCreatePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Create My Pack'),
+        title: const Text('Create a Meal'),
       ),
       body: const Column(
         children: [

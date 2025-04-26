@@ -16,7 +16,7 @@ class TopQuestions extends StatelessWidget {
       children: [
         const SizedBox(height: AppDefaults.padding / 2),
         Text(
-          'Top Questions',
+          'Chat With CampusBot',
           style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class TopQuestions extends StatelessWidget {
           trailing: SvgPicture.asset(AppIcons.right),
         ),
         AppSettingsListTile(
-          label: 'What is Grocery?',
+          label: 'What is campusBite?',
           trailing: SvgPicture.asset(AppIcons.right),
         ),
         AppSettingsListTile(

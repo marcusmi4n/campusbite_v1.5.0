@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
               ),
               floating: true,
               title: SvgPicture.asset(
-                "assets/images/app_logo.svg",
+                "assets/images/campusbite_logo.png",
                 height: 32,
               ),
               actions: [

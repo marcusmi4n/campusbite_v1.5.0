@@ -13,22 +13,22 @@ class AddressSelector extends StatelessWidget {
     return Column(
       children: [
         TitleAndActionButton(
-          title: 'Select Delivery Address',
+          title: 'Select Faculty',
           actionLabel: 'Add New',
           onTap: () {},
           isHeadline: false,
         ),
         AddressCard(
-          label: 'Home Address',
-          phoneNumber: '(309) 071-9396-939',
-          address: '1749 Custom Road, Chhatak',
+          label: 'Lecture Room',
+          phoneNumber: '(256) 708-626730',
+          address: 'Smart Ideas, Innovation Hub',
           isActive: false,
           onTap: () {},
         ),
         AddressCard(
-          label: 'Office Address',
-          phoneNumber: '(309) 071-9396-939',
-          address: '1749 Custom Road, Chhatak',
+          label: 'Course',
+          phoneNumber: '(256) 704-288436',
+          address: 'Classroom, Room 2.10',
           isActive: true,
           onTap: () {},
         )

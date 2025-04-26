@@ -19,22 +19,22 @@ class FoodCategories extends StatelessWidget {
         children: [
           AppChip(
             isActive: true,
-            label: 'Vegetables',
+            label: 'BreakFast',
             onPressed: () {},
           ),
           AppChip(
             isActive: false,
-            label: 'Meat & Fish',
+            label: 'Lunch',
             onPressed: () {},
           ),
           AppChip(
             isActive: false,
-            label: 'Medicine',
+            label: 'Supper',
             onPressed: () {},
           ),
           AppChip(
             isActive: false,
-            label: 'Baby Care',
+            label: 'Snacks',
             onPressed: () {},
           ),
         ],

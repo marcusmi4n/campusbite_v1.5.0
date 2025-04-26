@@ -37,8 +37,8 @@ class PaymentMethodPage extends StatelessWidget {
           ),
           PaymentOptionTile(
             icon: 'https://i.imgur.com/7pI5714.png',
-            label: 'Paypal',
-            accountName: 'mypaypal@gmail.com',
+            label: 'VISA',
+            accountName: 'dianahkabengera@gmail.com',
             onTap: () {},
           ),
           PaymentOptionTile(
@@ -50,7 +50,7 @@ class PaymentMethodPage extends StatelessWidget {
           PaymentOptionTile(
             icon: 'https://i.imgur.com/lLUcMC1.png',
             label: 'Apple Pay',
-            accountName: 'applepay.com',
+            accountName: 'dianahkabengera@icloud.com',
             onTap: () {},
           ),
         ],

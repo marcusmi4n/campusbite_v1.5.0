@@ -29,7 +29,9 @@ class VerticalStepIndicator extends StatelessWidget {
               height: height / 2,
               width: 3,
               decoration: BoxDecoration(
-                color: isActive ? AppColors.primary : Colors.grey,
+                color: isActive
+                    ? const Color.fromARGB(255, 44, 102, 59)
+                    : Colors.grey,
               ),
             ),
           Container(
@@ -37,7 +39,9 @@ class VerticalStepIndicator extends StatelessWidget {
             height: 14,
             decoration: BoxDecoration(
               border: Border.all(
-                color: isActive ? AppColors.primary : Colors.grey,
+                color: isActive
+                    ? const Color.fromARGB(255, 44, 102, 59)
+                    : Colors.grey,
                 width: 3,
               ),
               shape: BoxShape.circle,
@@ -47,7 +51,9 @@ class VerticalStepIndicator extends StatelessWidget {
             height: !isStart ? height / 2 : height,
             width: 3,
             decoration: BoxDecoration(
-              color: isActive ? AppColors.primary : Colors.grey,
+              color: isActive
+                  ? const Color.fromARGB(255, 44, 102, 59)
+                  : Colors.grey,
               borderRadius: isEnd ? AppDefaults.borderRadius : null,
             ),
           )

@@ -45,13 +45,13 @@ class ProductDetailsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Cauliflower Bangladeshi',
+                      'Pilawo with Rolex ',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
                     ),
                     const SizedBox(height: 8),
-                    const Text('Weight: 5Kg'),
+                    const Text('Weight: 700g'),
                   ],
                 ),
               ),
@@ -81,7 +81,7 @@ class ProductDetailsPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'Duis aute veniam veniam qui aliquip irure duis sint magna occaecat dolore nisi culpa do. Est nisi incididunt aliquip  commodo aliqua tempor.',
+                    'Pilawo is a richly spiced Ugandan rice dish cooked with tender meat and aromatic spices, while Rolex is a popular street food made by rolling a vegetable omelette inside a soft chapati..',
                   ),
                 ],
               ),

@@ -30,6 +30,8 @@ class AppIcons {
   static const shoppingCart = 'assets/icons/shopping_cart.svg';
   static const delete = 'assets/icons/delete.svg';
   static const paypal = 'assets/icons/paypal.svg';
+  static const airtel = 'assets/icons/airtel_money.png';
+  static const mtn = 'assets/icons/mtn_logo.jpg';
   static const cashOnDelivery = 'assets/icons/cash_on_delivery.svg';
   static const masterCard = 'assets/icons/master_card.svg';
   static const filter = 'assets/icons/filter.svg';
@@ -41,6 +43,7 @@ class AppIcons {
 
   static const right = 'assets/icons/right.svg';
   static const profilePerson = 'assets/icons/profile_person.svg';
+  static const luffy = 'assets/icons/luffy_profile.jpeg';
   static const profileNotification = 'assets/icons/profile_notification.svg';
   static const profilePayment = 'assets/icons/profile_payment.svg';
   static const profileSetting = 'assets/icons/profile_setting.svg';

@@ -32,7 +32,7 @@ class HelpTopics extends StatelessWidget {
           trailing: SvgPicture.asset(AppIcons.right),
         ),
         AppSettingsListTile(
-          label: 'Shipping & Delivery',
+          label: 'Delivery',
           trailing: SvgPicture.asset(AppIcons.right),
         ),
         AppSettingsListTile(

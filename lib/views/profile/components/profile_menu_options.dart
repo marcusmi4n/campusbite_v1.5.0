@@ -40,7 +40,7 @@ class ProfileMenuOptions extends StatelessWidget {
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
-            title: 'Payment',
+            title: 'Payment Method',
             icon: AppIcons.profilePayment,
             onTap: () => Navigator.pushNamed(context, AppRoutes.paymentMethod),
           ),

@@ -59,7 +59,7 @@ class _EntryPointUIState extends State<EntryPointUI> {
         onPressed: () {
           onBottomNavigationTap(2);
         },
-        backgroundColor: AppColors.primary,
+        backgroundColor: const Color.fromARGB(255, 44, 102, 59),
         child: SvgPicture.asset(AppIcons.cart),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

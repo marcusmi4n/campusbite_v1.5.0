@@ -19,7 +19,7 @@ class SearchBar extends StatelessWidget {
         padding: const EdgeInsets.all(AppDefaults.padding),
         child: TextField(
           decoration: InputDecoration(
-            labelText: 'Search Product',
+            labelText: 'Search food, snacks',
             suffixIcon: IconButton(
               icon: SvgPicture.asset(
                 AppIcons.search,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../core/components/app_back_button.dart';
-import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
 import '../../core/constants/app_icons.dart';
 import '../../core/routes/app_routes.dart';
@@ -91,7 +90,7 @@ class _SearchPageHeader extends StatelessWidget {
                         child: SvgPicture.asset(
                           AppIcons.search,
                           colorFilter: const ColorFilter.mode(
-                            AppColors.primary,
+                            Color.fromARGB(255, 44, 102, 59),
                             BlendMode.srcIn,
                           ),
                         ),
@@ -155,7 +154,7 @@ class SearchHistoryTile extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              'Vegetables',
+              'Lunch',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             const Spacer(),

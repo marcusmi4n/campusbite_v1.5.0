@@ -15,7 +15,7 @@ class HelpPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Help'),
+        title: const Text('Talk to our ChatBot'),
       ),
       body: SingleChildScrollView(
         child: Padding(

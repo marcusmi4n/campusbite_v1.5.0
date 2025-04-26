@@ -22,7 +22,7 @@ class AppTheme {
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
-          fontFamily: "Comic Sans MS",
+          fontFamily: "Quicksand",
         ),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarBrightness: Brightness.light,
@@ -54,7 +54,7 @@ class AppTheme {
         style: TextButton.styleFrom(
           textStyle: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontFamily: 'Comic Sans MS',
+            fontFamily: 'Quicksand',
           ),
         ),
       ),

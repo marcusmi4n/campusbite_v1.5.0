@@ -28,7 +28,8 @@ class SignUpButton extends StatelessWidget {
             },
             style: ElevatedButton.styleFrom(
               elevation: 1,
-              backgroundColor: Colors.orange, // Primary orange
+              backgroundColor:
+                  const Color.fromARGB(255, 44, 102, 59), // Primary orange
               foregroundColor: Colors.white, // Icon color
               padding: const EdgeInsets.all(16), // Better touch target
               shape: RoundedRectangleBorder(

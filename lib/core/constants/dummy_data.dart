@@ -5,60 +5,60 @@ class Dummy {
   /// List Of Dummy Products
   static List<ProductModel> products = [
     ProductModel(
-      name: 'Perry\'s Ice Cream Banana',
+      name: 'Marcus\'s Rolex',
       weight: '800 gm',
       cover: 'https://i.imgur.com/6unJlSL.png',
       images: ['https://i.imgur.com/6unJlSL.png'],
-      price: 13,
-      mainPrice: 15,
+      price: 1000,
+      mainPrice: 3000,
     ),
     ProductModel(
-      name: 'Vanilla Ice Cream Banana',
+      name: 'Sausage and Black Tea',
       weight: '500 gm',
       cover: 'https://i.imgur.com/oaCY49b.png',
       images: ['https://i.imgur.com/oaCY49b.png'],
-      price: 12,
-      mainPrice: 15,
+      price: 500,
+      mainPrice: 2000,
     ),
     ProductModel(
-      name: 'Meat',
-      weight: '1 Kg',
+      name: 'Matoooke and Rice with Meat',
+      weight: '500g',
       cover: 'https://i.imgur.com/5wghZji.png',
       images: ['https://i.imgur.com/5wghZji.png'],
-      price: 15,
-      mainPrice: 18,
+      price: 2000,
+      mainPrice: 4500,
     ),
   ];
 
   /// List Of Dummy Bundles
   static List<BundleModel> bundles = [
     BundleModel(
-      name: 'Bundle Pack',
+      name: 'Pancakes',
       cover: 'https://i.imgur.com/Y0IFT2g.png',
-      itemNames: ['Onion, Oil, Salt'],
-      price: 35,
-      mainPrice: 50.32,
+      itemNames: ['Cassava, Oil, Sugar'],
+      price: 100,
+      mainPrice: 500,
     ),
     BundleModel(
-      name: 'Medium Spices Pack',
+      name: 'Nsenene',
       cover: 'https://i.postimg.cc/qtM4zj1K/packs-2.png',
       itemNames: ['Onion, Oil, Salt'],
-      price: 35,
-      mainPrice: 50.32,
+      price: 7000,
+      mainPrice: 10000,
     ),
     BundleModel(
-      name: 'Bundle Pack',
+      name: 'Rice & Beans',
       cover: 'https://i.postimg.cc/MnwW8WRd/pack-1.png',
       itemNames: ['Onion, Oil, Salt'],
-      price: 35,
-      mainPrice: 50.32,
+      price: 1500,
+      mainPrice: 3000,
     ),
     BundleModel(
-      name: 'Bundle Pack',
+      name: 'Pizza',
       cover: 'https://i.postimg.cc/k2y7Jkv9/pack-4.png',
       itemNames: ['Onion, Oil, Salt'],
-      price: 35,
-      mainPrice: 50.32,
+      price: 20000,
+      mainPrice: 30000,
     ),
   ];
 }

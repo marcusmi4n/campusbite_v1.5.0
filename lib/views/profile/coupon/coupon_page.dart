@@ -56,7 +56,7 @@ class CouponLists extends StatelessWidget {
           onTap: () => Navigator.pushNamed(context, AppRoutes.couponDetails),
         ),
         CouponCard(
-          title: 'Lifebuoy\nHandwash',
+          title: 'Posho\nBeans',
           discounts: '23%',
           couponBackground: AppImages.couponBackgrounds[1],
           expire: 'Exp-28/12/2020',
@@ -72,7 +72,7 @@ class CouponLists extends StatelessWidget {
           onTap: () => Navigator.pushNamed(context, AppRoutes.couponDetails),
         ),
         CouponCard(
-          title: 'Tuna\nFish',
+          title: 'Corned\nIce Cream',
           discounts: '18%',
           couponBackground: AppImages.couponBackgrounds[3],
           expire: 'Exp-28/12/2020',

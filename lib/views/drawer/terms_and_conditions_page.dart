@@ -17,24 +17,24 @@ class TermsAndConditionsPage extends StatelessWidget {
         children: [
           TitleAndParagraph(
               isTitleHeadline: false,
-              title: 'General site usage last revised\nDecember 12-01-2020.',
+              title: 'Welcome to Campus Bite!.',
               paragraph:
-                  '''Welcome to www.saydulmoon.info. Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis voluptate cupidatat quis irure irure consequat irure.'''),
+                  '''Please read these Terms and Conditions ("Terms") carefully before using our application ("Service"). By accessing or using Campus Bite, you agree to be bound by these Terms..'''),
           TitleAndParagraph(
               isTitleHeadline: false,
-              title: '1. Agreement',
+              title: '1. Eligibility',
               paragraph:
-                  '''Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis voluptate cupidatat quis irure irure consequat irure.'''),
+                  '''You must be a registered student or authorized user of the affiliated campus to use Campus Bite. By registering, you confirm that all information provided is accurate..'''),
           TitleAndParagraph(
               isTitleHeadline: false,
-              title: '2. Account',
+              title: '2. User Account',
               paragraph:
-                  '''Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis voluptate cupidatat quis irure irure consequat irure.'''),
+                  '''You must create an account to place orders.\nYou are responsible for maintaining the confidentiality of your login credentials.\nCampus Bite is not liable for unauthorized access resulting from your negligence..'''),
           TitleAndParagraph(
               isTitleHeadline: false,
-              title: '3. Relationship With Groceries',
+              title: '3. Ordering and Payments',
               paragraph:
-                  '''Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis voluptate cupidatat quis irure irure consequat irure.Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis '''),
+                  '''Orders can only be placed through the Campus Bite app.\nAll payments must be made electronically via the app.\nPrices are subject to change without notice. '''),
         ],
       ),
     );

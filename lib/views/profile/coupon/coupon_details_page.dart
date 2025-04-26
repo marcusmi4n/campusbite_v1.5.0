@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/components/app_back_button.dart';
-import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_defaults.dart';
 import 'components/coupon_card.dart';
 
@@ -23,14 +22,14 @@ class CouponDetailsPage extends StatelessWidget {
           CouponCard(
             title: 'Black\nCoffee',
             discounts: '41%',
-            expire: 'Exp-28/12/2020',
+            expire: 'Exp-28/12/2025',
             color: const Color(0xFF402FBE),
             onTap: () {},
           ),
           Padding(
             padding: const EdgeInsets.all(AppDefaults.padding),
             child: Text(
-              '41% off only for you. To get this discount\ncollect and apply the voucher.',
+              '🔥 Campus Deals Banner (New) 20% Off Smoothies Today! 🍹\ncollect and apply the voucher.',
               style: Theme.of(context)
                   .textTheme
                   .bodyLarge
@@ -44,7 +43,7 @@ class CouponDetailsPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(AppDefaults.padding),
               child: Text(
-                'Exp 12/12/2020',
+                'Exp 12/12/2025',
                 style: Theme.of(context)
                     .textTheme
                     .bodyLarge
@@ -98,13 +97,13 @@ class CouponBenefits extends StatelessWidget {
       child: Column(
         children: [
           BenefitsTile(
-            details: 'Redeemable At All Sulphurfree Bura And Black Coffee',
+            details: '🎁 20% Off Rolex Available until Friday',
           ),
           BenefitsTile(
-            details: 'Not Valid With Any Other Discount And Promotion',
+            details: '🍹 Free Juice on Orders Over UGX 15K',
           ),
           BenefitsTile(
-            details: 'Vaild For Sulphurfree, Coffee, And Tea Only',
+            details: 'Meat Kakomando with Soda at 1k',
           ),
           BenefitsTile(
             details: 'No Cash Value',
@@ -137,7 +136,8 @@ class BenefitsTile extends StatelessWidget {
               width: 20,
               height: 5,
               margin: const EdgeInsets.only(right: AppDefaults.padding),
-              decoration: const BoxDecoration(color: AppColors.primary),
+              decoration:
+                  const BoxDecoration(color: Color.fromARGB(255, 44, 102, 59)),
             ),
             Expanded(
               child: Text(details),

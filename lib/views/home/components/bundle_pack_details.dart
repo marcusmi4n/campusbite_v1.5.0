@@ -17,7 +17,7 @@ class PackDetails extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              'Pack Details',
+              'Food Details',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
@@ -33,9 +33,9 @@ class PackDetails extends StatelessWidget {
                 child:
                     NetworkImageWithLoader('https://i.imgur.com/Y0IFT2g.png'),
               ),
-              title: const Text('Cabbage'),
+              title: const Text('Rolex'),
               trailing: Text(
-                '2 Kg',
+                '500g',
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall

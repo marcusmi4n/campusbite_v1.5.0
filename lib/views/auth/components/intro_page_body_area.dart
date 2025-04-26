@@ -31,7 +31,7 @@ class IntroPageBodyArea extends StatelessWidget {
                     'CampusBite 🍔',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
-                        color: const Color.fromARGB(255, 241, 153, 36)),
+                        color: const Color.fromARGB(255, 44, 102, 59)),
                   ),
                 ],
               ),
@@ -48,7 +48,8 @@ class IntroPageBodyArea extends StatelessWidget {
                     onPressed: () =>
                         Navigator.pushNamed(context, AppRoutes.loginOrSignup),
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange),
+                        backgroundColor:
+                            const Color.fromARGB(255, 44, 102, 59)),
                     child: const Text('Continue with Email or Phone'),
                   ),
                 ),

@@ -36,7 +36,7 @@ class SocialLogins extends StatelessWidget {
                   Text(
                     'Google',
                     style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                          color: Colors.red,
+                          color: const Color.fromARGB(255, 44, 102, 59),
                           fontWeight: FontWeight.bold,
                         ),
                   ),

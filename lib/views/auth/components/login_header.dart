@@ -34,7 +34,7 @@ class LoginPageHeader extends StatelessWidget {
           'CampusBite 🍔',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(255, 247, 142, 5),
+                color: const Color.fromARGB(255, 44, 102, 59),
               ),
         ),
       ],

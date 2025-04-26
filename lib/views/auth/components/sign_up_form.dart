@@ -39,12 +39,14 @@ class _SignUpFormState extends State<SignUpForm> {
             validator: Validators.requiredWithFieldName('Name').call,
             textInputAction: TextInputAction.next,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.person_outline, color: Colors.orange),
+              prefixIcon: Icon(Icons.person_outline,
+                  color: const Color.fromARGB(255, 44, 102, 59)),
               border: OutlineInputBorder(
                 borderRadius: AppDefaults.borderRadius,
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.orange),
+                borderSide:
+                    const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
                 borderRadius: AppDefaults.borderRadius,
               ),
             ),
@@ -60,7 +62,8 @@ class _SignUpFormState extends State<SignUpForm> {
             keyboardType: TextInputType.number,
             inputFormatters: [FilteringTextInputFormatter.digitsOnly],
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.numbers, color: Colors.orange),
+              prefixIcon: Icon(Icons.numbers,
+                  color: const Color.fromARGB(255, 44, 102, 59)),
               border: OutlineInputBorder(
                 borderRadius: AppDefaults.borderRadius,
               ),
@@ -99,8 +102,8 @@ class _SignUpFormState extends State<SignUpForm> {
                   width: 24,
                   colorFilter: ColorFilter.mode(
                     _obscurePassword
-                        ? Colors.orange.shade300
-                        : Colors.orange.shade800,
+                        ? const Color.fromARGB(255, 71, 172, 98)
+                        : const Color.fromARGB(255, 46, 94, 59),
                     BlendMode.srcIn,
                   ),
                 ),

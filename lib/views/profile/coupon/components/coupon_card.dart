@@ -112,7 +112,8 @@ class CouponCard extends StatelessWidget {
                             ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                foregroundColor: AppColors.primary,
+                                foregroundColor:
+                                    const Color.fromARGB(255, 44, 102, 59),
                                 backgroundColor: Colors.white,
                                 padding: const EdgeInsets.symmetric(
                                   vertical: 0,
@@ -126,7 +127,8 @@ class CouponCard extends StatelessWidget {
                                     .textTheme
                                     .bodySmall
                                     ?.copyWith(
-                                      color: AppColors.primary,
+                                      color: const Color.fromARGB(
+                                          255, 44, 102, 59),
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),

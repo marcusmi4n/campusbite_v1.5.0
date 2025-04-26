@@ -25,7 +25,7 @@ class AnimatedDots extends StatelessWidget {
           width: currentIndex == index ? 25 : 15,
           decoration: BoxDecoration(
             color: currentIndex == index
-                ? AppColors.primary
+                ? const Color.fromARGB(255, 44, 102, 59)
                 : const Color(0xFF9FC5A6),
             borderRadius: AppDefaults.borderRadius,
           ),

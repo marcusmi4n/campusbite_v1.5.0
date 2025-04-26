@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/components/network_image.dart';
-import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_defaults.dart';
 import '../../../core/routes/app_routes.dart';
 
@@ -30,7 +29,7 @@ class DeliverySuccessfullDialog extends StatelessWidget {
               ),
             ),
             const Text(
-              'Hurrah!!  we just deliverred your',
+              'Hurray!!  we just delivered your',
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 4),
@@ -44,7 +43,7 @@ class DeliverySuccessfullDialog extends StatelessWidget {
                       .bodyLarge
                       ?.copyWith(color: Colors.black),
                 ),
-                const Text(' order Successfully.')
+                const Text(' Order Successfully.')
               ],
             ),
             const SizedBox(height: AppDefaults.padding),
@@ -65,8 +64,9 @@ class DeliverySuccessfullDialog extends StatelessWidget {
                   Navigator.pushNamed(context, AppRoutes.entryPoint);
                 },
                 style: OutlinedButton.styleFrom(
-                  foregroundColor: AppColors.primary,
-                  side: const BorderSide(color: AppColors.primary),
+                  foregroundColor: const Color.fromARGB(255, 44, 102, 59),
+                  side:
+                      const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
                 ),
                 child: const Text('Browse Home'),
               ),

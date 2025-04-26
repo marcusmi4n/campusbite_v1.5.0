@@ -16,31 +16,31 @@ class CompletedTab extends StatelessWidget {
       children: [
         OrderPreviewTile(
           orderID: '232425627',
-          date: '25 Nov',
+          date: '05 Nov',
           status: OrderStatus.confirmed,
           onTap: () => Navigator.pushNamed(context, AppRoutes.orderDetails),
         ),
         OrderPreviewTile(
           orderID: '232425627',
-          date: '25 Nov',
+          date: '10 Nov',
           status: OrderStatus.processing,
           onTap: () => Navigator.pushNamed(context, AppRoutes.orderDetails),
         ),
         OrderPreviewTile(
           orderID: '232425627',
-          date: '25 Nov',
+          date: '15 Nov',
           status: OrderStatus.shipped,
           onTap: () => Navigator.pushNamed(context, AppRoutes.orderDetails),
         ),
         OrderPreviewTile(
           orderID: '232425627',
-          date: '25 Nov',
+          date: '20 Nov',
           status: OrderStatus.delivery,
           onTap: () => Navigator.pushNamed(context, AppRoutes.orderDetails),
         ),
         OrderPreviewTile(
           orderID: '232425627',
-          date: '25 Nov',
+          date: '23 Nov',
           status: OrderStatus.cancelled,
           onTap: () => Navigator.pushNamed(context, AppRoutes.orderDetails),
         ),

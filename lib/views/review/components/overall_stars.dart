@@ -15,7 +15,7 @@ class OverallStars extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(AppDefaults.padding),
           decoration: const BoxDecoration(
-              color: AppColors.primary, shape: BoxShape.circle),
+              color: Color.fromARGB(255, 44, 102, 59), shape: BoxShape.circle),
           child: Text(
             '4.5',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(

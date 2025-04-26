@@ -45,8 +45,9 @@ class CategoriesChip extends StatelessWidget {
         padding:
             const EdgeInsets.symmetric(horizontal: AppDefaults.padding * 1.5),
         minimumSize: const Size(40, 48),
-        backgroundColor: isActive ? AppColors.primary : Colors.white,
-        side: const BorderSide(color: AppColors.primary),
+        backgroundColor:
+            isActive ? const Color.fromARGB(255, 44, 102, 59) : Colors.white,
+        side: const BorderSide(color: Color.fromARGB(255, 44, 102, 59)),
         textStyle: const TextStyle(
           fontWeight: FontWeight.normal,
         ),

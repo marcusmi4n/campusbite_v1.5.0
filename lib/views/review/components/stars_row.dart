@@ -30,7 +30,7 @@ class StarsRow extends StatelessWidget {
                 height: 10,
                 child: LinearProgressIndicator(
                   value: totalPercentage / 100,
-                  color: AppColors.primary,
+                  color: const Color.fromARGB(255, 44, 102, 59),
                   backgroundColor: AppColors.cardColor,
                 ),
               ),

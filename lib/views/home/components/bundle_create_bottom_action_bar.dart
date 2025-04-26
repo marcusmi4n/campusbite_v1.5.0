@@ -14,7 +14,7 @@ class BottomActionBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(AppDefaults.padding),
       decoration: BoxDecoration(
-        color: AppColors.primary,
+        color: const Color.fromARGB(255, 44, 102, 59),
         borderRadius: AppDefaults.bottomSheetRadius,
       ),
       child: Row(
@@ -37,7 +37,7 @@ class BottomActionBar extends StatelessWidget {
           // ),
           const Spacer(),
           Text(
-            '\$35.05',
+            '\$ UGX 5000',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
