@@ -512,10 +512,10 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-04-26T15:39:42.395551Z",
+  "generated": "2025-05-13T21:40:45.771489Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///development/flutter",
-  "flutterVersion": "3.29.2",
+  "flutterVersion": "3.29.3",
   "pubCache": "file:///home/grimian/.pub-cache"
 }
