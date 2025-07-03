@@ -30,3 +30,13 @@ CampusBite/<br>
 ├── docs/                   # Reports, proposal, user guide <br>
 ├── pubspec.yaml            # Flutter dependencies <br>
 └── README.md
+
+## 🔧 Setup Instructions
+
+**Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/CampusBite.git
+   cd CampusBite
+
+
+
