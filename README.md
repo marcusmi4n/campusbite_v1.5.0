@@ -37,6 +37,9 @@ CampusBite/<br>
    ```bash
    git clone https://github.com/your-username/CampusBite.git
    cd CampusBite
+   
+   flutter pub get
+   flutter run
 
 
 
