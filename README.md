@@ -23,7 +23,7 @@ CampusBite is Uganda’s first campus-focused food delivery platform designed sp
 ---
 
 ## 📁 Folder Structure
-CampusBite/
+CampusBite/<br>
 ├── lib/                    # Flutter app code
 ├── assets/                 # Images, icons, Lottie animations
 ├── supabase(serverless)/               # DB schema (SQL), auth setup
